@@ -31,5 +31,12 @@ if st.button(label="Chat now"):
 with st.sidebar:
     if 'content' not in st.session_state:
         st.session_state['content'] = ''
+    else:
+        content = st.session_state.get('content')
+        res=content.split('\n')
+        comma_separated_rows = [','.join(ele.split()) for ele in res]
 
-    st.download_button(label="Download Preprocessed Data", data=st.session_state['content'], file_name="data.csv")
+        content = '\n'.join(comma_separated_rows)
+
+        st.download_button(label="Download Preprocessed Data", data=content, file_name="data.csv")
+
