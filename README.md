@@ -1,4 +1,4 @@
-# AI-Data-Tool
+# AI Powered - Data-Tool
 
 [![License](https://img.shields.io/github/license/Kasa-Harendra/AI-Data-Tool?color=blue)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
@@ -118,3 +118,4 @@ PandasAI/
     Name: Sales, dtype: int64
 
     ```
+
