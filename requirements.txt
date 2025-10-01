@@ -11,3 +11,6 @@ plotly==5.20.0
 requests==2.31.0
 langchain-experimental==0.0.57
 scikit-learn==1.4.0
+re
+langchain-google-genai
+
