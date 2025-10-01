@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 import os
 from uuid import uuid1
 
-st.set_page_config('AI Data Tool', page_icon="📊")
+st.set_page_config('AI-Powered Data Tool', page_icon="📊")
 
-st.title('AI-Data Tool')
+st.title('AI-Powered Data Tool')
 st.divider()
 
 load_dotenv()
@@ -31,4 +31,5 @@ if st.button(label="Chat now"):
 with st.sidebar:
     if 'content' not in st.session_state:
         st.session_state['content'] = ''
+
     st.download_button(label="Download Preprocessed Data", data=st.session_state['content'], file_name="data.csv")
